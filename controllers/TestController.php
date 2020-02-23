@@ -18,16 +18,52 @@ class TestController extends Controller
     }
 
 
-     public function Id($id)
+    public function actionId()
     {
 
         // echo $id;
 
-        print_r($id);
+        // print_r($id);
+
+        echo 'hola';
 
         // return $id;
 
     }
+
+
+    public function actionRaro($id)
+    {
+        // algo pasa con los parametros que no los imprime en el metodo
+
+        // echo $id;
+
+        // print_r($id);
+
+        echo $id;
+
+        // return $id;
+
+    }
+
+     public function actionUsers()
+    {
+
+        // echo $id;
+
+        return $this->render('otra');
+
+        // return $id;
+
+    }
+
+
+    public function actionRedi() {
+   
+     // return $this->redirect('http://google.com');
+
+        return $this->redirect(['users']);
+    } 
 
 
 }
