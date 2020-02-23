@@ -43,14 +43,14 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        //descomentar estas lineas para url amigables
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
